@@ -1,0 +1,207 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+
+}
+body{
+	background: #DDDDDD;
+}
+/*======================== admin ==================*/
+.container2{
+	display: flex;
+    justify-content: center;
+
+}
+.container-form2	{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+
+}
+.container-form2 input[type='text']{
+	font-size: 23px;
+	outline: none;
+	border: 0;
+	margin: 10px;
+	width: 100%;
+	height: 40px;
+
+}
+.elementos{
+	background: #EEEEEE;
+	width: 100%;
+	height: 80px;
+	margin: 20px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.container-form2 input[type='submit']{
+    width: 30%;
+}
+
+
+/*======================= header ====================*/
+
+header{
+	background: #EEEEEE;
+	height: 80px;
+}
+nav{
+    
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	
+}
+h1{
+	font-size: 22px;
+	display: inline;
+	color: #E83A14;
+}
+a{
+	text-decoration: none;
+	color: #FF8C32;
+	font-size: 24px;
+}
+a:hover{
+	color: #E83A14;
+}
+
+/*===================== formulario ==================*/
+.container-form	{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+}
+select{
+	margin: 10px;
+
+}
+label{
+	font-size: 22px;
+}
+input[type='text'],input[type='email']{
+	font-size: 20px;
+	outline: none;
+	border: 0;
+	padding: 5px 0px;
+	margin: 10px;
+	width: 70%;
+
+}
+input[type='checkbox']{
+	font-size: 20px;
+    margin:0  10px 0 0;	
+}
+input[type='submit']{
+	background:   #FF8C32;
+	color: #fff;
+	font-size: 20px;
+    margin: 10px;
+    width: 30%;
+    height: 44px;
+    border: 0;
+}
+input[type='submit']:hover{
+    box-shadow: 5px 5px 22px #FF8C32, -5px -5px 22px #FF8C32;
+}
+
+.notificacion{
+	background: #EEEEEE;
+	width: 70%;
+	height: 80px;
+	margin: 10px;
+	text-align: center;
+	padding: 10px 0;
+}
+/*==================== tabla ==================*/
+.tabla{
+	display: flex;
+	justify-content: center;
+}
+table{
+	
+	border-collapse: collapse;
+
+}
+th,tr,td{
+	padding: 10px;
+	background: #EEEEEE;
+	border: 1px solid  #FF8C32;
+
+}
+td a {
+	display: flex;
+	justify-content: center;
+	color: red;
+}
+#modal{
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background: rgb(0, 0, 0,.5);
+	position: absolute;
+	top: 0;
+ 	width: 100%;
+ 	height: 470px;
+}
+#modal	form{
+	height: 250px;
+	width: 80%;
+	background: #EEEEEE;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#modal input{
+	border: 0;
+	outline: none;
+	padding: 7px;
+	font-size: 15px;
+}
+#modal #cerrar{
+	position: absolute;
+	right: 12px;
+	top: 15px;
+	padding: 10px;
+	cursor: pointer;
+	background:#EEEEEE;
+	color: #000;
+	font-size: 25px;
+	border-radius:50%;
+}
+@media(width<400){
+#modal{
+
+ 	width: 370px;
+ 	height: 500px;
+}
+input[type='submit']{
+	
+	font-size: 15px;
+   
+}
+
+}
+@media(width<600){
+#modal{
+
+ 	width: 570px;
+ 	height: 500px;
+}
+input[type='submit']{
+	
+	font-size: 15px;
+   
+}
+}
